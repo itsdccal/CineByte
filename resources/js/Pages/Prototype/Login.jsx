@@ -1,3 +1,6 @@
+import Input from "@/Components/Input";
+
+
 export default function Login() {
     return (
         <div className="mx-auto max-w-screen min-h-screen bg-black text-white md:px-10 px-3">
@@ -21,15 +24,11 @@ export default function Login() {
                         <div className="flex flex-col gap-6">
                             <div>
                                 <label className="text-base block mb-2">Email Address</label>
-                                <input type="email" name="email"
-                                    className="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
-                                    placeholder="Email Address" />
+                                <Input type="email" name="email" placeholder="Email Address" />
                             </div>
                             <div>
                                 <label className="text-base block mb-2">Password</label>
-                                <input type="password" name="password"
-                                    className="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
-                                    placeholder="Password" />
+                                <Input type="password" name="password" placeholder="Password" />
                             </div>
                         </div>
                         <div className="grid space-y-[14px] mt-[30px]">
