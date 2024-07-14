@@ -34,7 +34,7 @@ export default function Login() {
                             </div>
                         </div>
                         <div className="grid space-y-[14px] mt-[30px]">
-                                <Link href={route('prototype.regster')}>
+                                <Link href={route('prototype.register')}>
                                     <Button type="button" variant="primary">
                                         <span className="text-base font-semibold">
                                             Start Watching
