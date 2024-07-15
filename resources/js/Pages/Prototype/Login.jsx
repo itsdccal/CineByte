@@ -5,6 +5,8 @@ import { Head, Link } from "@inertiajs/inertia-react";
 
 export default function Login() {
     return (
+        <>
+        <Head title="Sign In" />
         <div className="mx-auto max-w-screen min-h-screen bg-black text-white md:px-10 px-3">
             <div className="fixed top-[-50px] hidden lg:block">
                 <img src="/images/signup-image.png"
@@ -53,5 +55,6 @@ export default function Login() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
