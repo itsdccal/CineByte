@@ -1,8 +1,11 @@
-export default function Authenticated({children}) {
+import Sidebar from "@/Layouts/Authenticated/Sidebar";
+
+export default function Authenticated({ children }) {
     return (
         <>
             <div className="max-w-screen mx-auto hidden lg:block">
                 {/* <!-- START: Sidebar --> */}
+                <Sidebar />
                 {/* <!-- END: Sidebar --> */}
 
                 {/* <!-- START: Content --> */}
@@ -15,11 +18,11 @@ export default function Authenticated({children}) {
                 </div>
                 {/* <!-- END: Content --> */}
             </div>
-        <div class="mx-auto px-4 w-full h-screen lg:hidden flex bg-black">
-        <div class="text-white text-2xl text-center leading-snug font-medium my-auto">
-            Sorry, this page only supported on 1024px screen or above
-        </div>
-    </div>
+            <div className="mx-auto px-4 w-full h-screen lg:hidden flex bg-black">
+                <div className="text-white text-2xl text-center leading-snug font-medium my-auto">
+                    Sorry, this page only supported on 1024px screen or above
+                </div>
+            </div>
         </>
-    )
+    );
 }
